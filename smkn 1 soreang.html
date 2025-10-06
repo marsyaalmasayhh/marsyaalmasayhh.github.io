@@ -169,6 +169,9 @@
         }
         
         /* === 3. SAMBUTAN KEPALA SEKOLAH === */
+        /* Tambahkan padding-top ke body untuk mengimbangi header saat navigasi */
+        html { scroll-padding-top: 100px; /* Jarak dari atas saat melompat ke ID */ } 
+
         .sambutan-wrapper {
             background: #fff;
             padding: 30px;
@@ -532,14 +535,13 @@
 
     <div class="top-bar">
         <div class="top-bar-info">
-            <a href="#"><i class="fas fa-envelope primary-green"></i> E-Mail: admin@smkn.sch.id</a>
+            <a href="#"><i class="fas fa-envelope primary-green"></i> E-Mail: smkn1soreang@fmail.com </a>
             <a href="#"><i class="fas fa-phone primary-green"></i> Telp: +62 22 123456</a>
         </div>
         <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/smkn1soreang.official/" title="Facebook SMKN 1 Soreang"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/@smkn1soreang?si=W_LFPRoN54hK_lQ8" title="YouTube SMKN 1 Soreang"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/smkn1soreangofficial?igsh=YnlpYTc3dHFtZzk=" title="Instagram SMKN 1 Soreang"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-google-plus-g"></i></a>
         </div>
     </div>
@@ -552,23 +554,28 @@
             <p>Pusat Keunggulan</p>
         </div>
         <nav class="navbar">
-            <a href="#" style="color: #93C572; border-bottom: 2px solid #93C572;">BERANDA</a>
-            <a href="#">PROFIL</a>
-            <a href="#">JURUSAN</a>
-            <a href="#">GURU & PEGAWAI</a>
-            <a href="#">INFO PPDB</a>
-            <a href="#">KONTAK</a>
+            <a href="#beranda" style="color: #93C572; border-bottom: 2px solid #93C572;">BERANDA</a>
+            
+            <a href="#profil">PROFIL</a>
+            
+            <a href="#jurusan">JURUSAN</a>
+            
+            <a href="#guru-pegawai">GURU & PEGAWAI</a>
+            
+            <a href="#info-ppdb">INFO PPDB</a>
+            
+            <a href="#kontak">KONTAK</a>
         </nav>
     </header>
 
-    <div class="hero" style="background-image: url('https://warta-pendidikan.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-04-at-11.37.19.jpeg');">
+    <div class="hero" id="beranda" style="background-image: url('https://warta-pendidikan.com/wp-content/uploads/2021/06/WhatsApp-Image-2021-06-04-at-11.37.19.jpeg');">
         <div class="hero-text-overlay">
             <h2>KREATIF, INOPATIF, BERPRESTASI </h2>
         </div>
     </div>
 
     <div class="container">
-        <div class="sambutan-wrapper">
+        <div class="sambutan-wrapper" id="profil">
             <div class="sambutan-img-wrap">
                 <img src="https://smkn1soreang.sch.id/media_library/images/0c5931534a48d1cc7230b76ec5dbe06b.JPG" alt="Kepala Sekolah Heris Herdiyana">
             </div>
@@ -582,7 +589,7 @@
         </div>
     </div>
 
-    <section class="berita-section">
+    <section class="berita-section" id="info-ppdb">
         <div class="container">
             <div class="section-title-wrapper">
                 <h3 class="section-title">INFO TERBARU</h3>
@@ -624,7 +631,7 @@
                 </div>
             </div>
 
-            <div class="teacher-section">
+            <div class="teacher-section" id="guru-pegawai">
                 <div class="section-title-wrapper">
                     <h3 class="section-title">DATA GURU</h3>
                     <p class="section-subtitle">Tenaga Pendidik Terbaik</p>
@@ -652,7 +659,7 @@
         </div>
     </section>
 
-    <section class="keahlian-section">
+    <section class="keahlian-section" id="jurusan">
         <div class="container">
             <h3 class="section-title">KOMPETENSI KEAHLIAN</h3>
             <div class="keahlian-list">
@@ -660,14 +667,14 @@
                     <h4>KELOMPOK TEKNOLOGI</h4>
                     <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Eelktronika industri (TEI)</span></div>
                     <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Komputer dan Jaringan (TKJ)</span></div>
-                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Kendaraan Ringan  (TKR)</span></div>
-                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Pengelasan  (TPLE)</span></div>
+                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Kendaraan Ringan (TKR)</span></div>
+                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Teknik Pengelasan (TPLE)</span></div>
                     <div class="keahlian-item" style="height: 27px;"></div>
                 </div>
                 <div class="keahlian-group">
                     <h4>KELOMPOK PARIWISATA</h4>
                     <div class="keahlian-item"><i class="fas fa-circle"></i><span>Tata Boga (TB)</span></div>
-                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Akomondasi Perhotelan  (AP)</span></div>
+                    <div class="keahlian-item"><i class="fas fa-circle"></i><span>Akomondasi Perhotelan (AP)</span></div>
                     <div class="keahlian-item" style="height: 27px;"></div>
                 </div>
             </div>
@@ -746,7 +753,7 @@
                     </div>
                     <div class="testimoni-card" style="min-width: calc(50% - 10px);">
                         <div class="card-header">
-                            <img src="alumni-3.jpg" alt="Alumni 3">
+                            <img src="alumni-3.jpg" alt="Alumni 2">
                             <h5>Asep Sunarya (Alumni)</h5>
                         </div>
                         <p>"Pengalaman PKL yang difasilitasi sekolah sangat berharga. Saya jadi punya koneksi luas di industri sebelum resmi lulus."</p>
@@ -763,7 +770,7 @@
             </div>
     </section>
 
-    <footer>
+    <footer id="kontak">
         <div class="footer-top">
             <div class="container footer-grid">
                 <div>
@@ -777,9 +784,9 @@
                 </div>
                 <div class="footer-links">
                     <h5>INFO</h5>
-                    <a href="#">Kontak</a>
+                    <a href="#kontak">Kontak</a>
                     <a href="#">Galeri</a>
-                    <a href="#">PPDB</a>
+                    <a href="#info-ppdb">PPDB</a>
                 </div>
                 <div class="footer-links">
                     <h5>LINK TERKAIT</h5>
@@ -790,10 +797,10 @@
                 <div class="footer-links">
                     <h5>SOCIAL MEDIA</h5>
                     <div class="footer-social-icons">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/smkn1soreang.official/" title="Facebook SMKN 1 Soreang"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@smkn1soreang?si=W_LFPRoN54hK_lQ8" title="YouTube SMKN 1 Soreang"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/smkn1soreangofficial?igsh=YnlpYTc3dHFtZzk=" title="Instagram SMKN 1 Soreang"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
                     </div>
                 </div>
             </div>
