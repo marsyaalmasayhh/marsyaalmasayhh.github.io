@@ -275,38 +275,88 @@
             color: #93C572;
             font-weight: bold;
         }
-
-        /* === 5. DATA GURU / TEACHER CARDS === */
-        .teacher-section {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        .teacher-card-wrapper {
+        
+        /* NEW CSS FOR SMALLER NEWS CARDS */
+        .berita-small-container {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 15px;
             margin-top: 30px;
-            margin-bottom: 30px;
         }
-        .teacher-card {
+        .berita-small-card {
             background: #fff;
-            border-radius: 10px;
-            padding: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: center; 
+            border: 1px solid #eee;
         }
-        .teacher-card img {
-            width: 100%;
-            height: 200px;
+        .berita-small-card img {
+            width: 100px; 
+            height: 90px;
             object-fit: cover;
-            border-radius: 5px;
-            margin-bottom: 10px;
+            flex-shrink: 0;
         }
-        .teacher-card p {
-            font-size: 13px;
+        .berita-small-info {
+            padding: 10px;
+            flex-grow: 1;
+        }
+        .berita-small-info h5 {
+            font-size: 13px; 
+            color: #333;
+            margin-bottom: 5px;
+            line-height: 1.3;
             font-weight: bold;
-            line-height: 1.4;
         }
+        .berita-footer-small {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px; 
+            color: #93C572;
+            margin-top: 5px;
+        }
+        .berita-footer-small a {
+            color: #93C572;
+            font-weight: bold;
+        }
+        /* END NEW CSS FOR SMALLER NEWS CARDS */
+
+ /* === 5. DATA GURU / TEACHER CARDS === */
+.teacher-section {
+    
+    text-align: center;
+    margin-bottom: 50px;
+}
+.teacher-card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.teacher-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+    text-align: center; 
+}
+.teacher-card img {
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto 10px auto; /* margin atas & samping 0, margin bawah 10px, auto untuk di tengah */
+}
+.teacher-card p {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.4;
+}
         
         /* === 6. KOMPETENSI KEAHLIAN (SKILLS/MAJORS) === */
         .keahlian-section {
@@ -581,8 +631,8 @@
             </div>
             <div class="sambutan-content">
                 <h3>SAMBUTAN KEPALA SEKOLAH</h3>
-                <h4>Heris Herdiyana, S.Pd., MM</h46y6  
-                <p>Dengan bangga saya menyambut Anda di website resmi SMKN 1 Soreang. Kami bertekad menjadi pusat pendidikan vokasi unggulan yang menghasilkan lulusan siap kerja dan berdaya saing global.</p>
+                <h4>Heris Herdiyana, S.Pd., MM</h4>
+                <p>Dengan bangga saya menyambut Anda di website resmi **SMKN 1 Soreang**. Kami bertekad menjadi pusat pendidikan vokasi unggulan yang menghasilkan lulusan siap kerja dan berdaya saing global.</p>
                 <p>Kami berkomitmen memberikan yang terbaik untuk seluruh peserta didik, membekali mereka dengan keterampilan teknis dan karakter yang kuat.</p>
                 <a href="#" class="btn">Selengkapnya</a>
             </div>
@@ -597,64 +647,137 @@
             </div>
             <div class="berita-container">
                 <div class="berita-card">
-                    <img src="https://smkn1soreang.sch.id/media_library/posts/large/a9e76d65fb6bb4f115281ab191f97275.JPG" alt="Berita 1">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/large/a9e76d65fb6bb4f115281ab191f97275.JPG" alt="Kunjungan Gubernur Jawa Barat Ridwan Kamil">
                     <div class="berita-info">
                         <h4>Kunjungan Gubernur Jawa Barat Ridwan Kamil</h4>
                         <p>Prosesi Penyambutan Bapak Gubernur Jawa Barat Ridwan Kamil dan Bunda Literasi Jawa Barat ataliadalam rangka Sarling Jabar, disambut oleh Kepala SMKN 1 Soreang, yakni Bapak Heris Herdiyana, S.Pd., M.M..</p>
                         <div class="berita-footer">
                             <span>06 Sep 2023</span>
-                            <a href="#">Baca Detail &gt;</a>
+                            <a href="https://smkn1soreang.sch.id/read/106/kunjungan-gubernur-jawa-barat-ridwan-kamil">Baca Detail &gt;</a>
                         </div>
                     </div>
                 </div>
                 <div class="berita-card">
-                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/dca30ef6cc5e87f018bb608b19bc123c.PNG"alt="Berita 1">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/dca30ef6cc5e87f018bb608b19bc123c.PNG" alt="Kunjungan dari PT Hinode Indonesia">
                     <div class="berita-info">
                         <h4>Kunjungan dari PT Hinode Indonesia dan Fuji Karya Nusantarakerja</h4>
                         <p>Kunjungan dari Hinode Indonesia dan Fuji Karya Nusantarakerja dalam rangka kunjungan kerja untuk MOU recruitment program kerja ke Japan.</p>
                         <div class="berita-footer">
                             <span>14 Des 2023</span>
-                            <a href="#">Baca Detail &gt;</a>
+                            <a href="https://smkn1soreang.sch.id/read/98/kunjungan-dari-pt-hinode-indonesia-dan-fuji-karya-nusantarakerja">Baca Detail &gt;</a>
                         </div>
                     </div>
                 </div>
                 <div class="berita-card">
-                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/8107c9b954bfc07c8a534561ee6e1a9b.jpeg" alt="Berita 3">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/8107c9b954bfc07c8a534561ee6e1a9b.jpeg" alt="Informasi PPDB 2023">
                     <div class="berita-info">
                         <h4>INFORMASI PPDB 2023 DAN JURUSAN DI SMKN 1 SOREANG</h4>
                         <p>Informasi PPDB 2023 silahkan di save yah adik- adik. untuk informasi jurusan di smkn 1 soreang silahkan adik-adik cek link di bawah ini ya. 1. Teknik Kendaraan Ringan 2. Teknik Pengelasan dan Fabrikasi Logam 3. Teknik Elektronika 4. Teknik Jaringan Komputer dan Telekomunikasi 5. Perhotelan 6. Kuliner.</p>
                         <div class="berita-footer">
                             <span>09 Mei 2023</span>
-                            <a href="#">Baca Detail &gt;</a>
+                            <a href="https://smkn1soreang.sch.id/read/103/informasi-ppdb-2023-dan-jurusan-di-smkn-1-soreang">Baca Detail &gt;</a>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="section-title-wrapper" style="margin-top: 50px;">
+                <h3 class="section-title">BERITA PILIHAN LAINNYA</h3>
+                <p class="section-subtitle">Kumpulan Informasi Singkat</p>
+            </div>
+
+            <div class="berita-small-container">
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/3536266ea0a7cd098a4315afbd75363e.jpg" alt="pengumuman tahap 2">
+                    <div class="berita-small-info">
+                        <h5>Pengumuman hasil PPDB tahap 2</h5>
+                        <div class="berita-footer-small">
+                            <span>21 Mar 2024</span>
+                            <a href="https://smkn1soreang.sch.id/read/115/pengumuman-hasil-ppdb-tahap-2-dan-daftar-ulang">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/94588d92392b92d1586e2ab0b6d179fe.jpg" alt="cara cek pendaftaran">
+                    <div class="berita-small-info">
+                        <h5>Cara cek pendaftaran online </h5>
+                        <div class="berita-footer-small">
+                            <span>10 Feb 2024</span>
+                            <a href="https://smkn1soreang.sch.id/read/114/cara-cek-pendaftaran-online-sudah-berhasil-di-ppdb-2024">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/90665ee5a5ad816beeba5b55bca8c985.jpeg" alt="juara silat">
+                    <div class="berita-small-info">
+                        <h5>Juara 1 pencak silat tingkat nasional</h5>
+                        <div class="berita-footer-small">
+                            <span>05 Jan 2024</span>
+                            <a href="https://smkn1soreang.sch.id/read/83/juara-1-pencak-silat-tingkat-nasional">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/31600655a3c7bb1170f0168e1c3a030c.JPG" alt="Plating">
+                    <div class="berita-small-info">
+                        <h5>Klomba plating dessert</h5>
+                        <div class="berita-footer-small">
+                            <span>17 Jul 2023</span>
+                            <a href="https://smkn1soreang.sch.id/read/108/prestasi-lomba-plating-dessert-authentic-buhun">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/ed0d85f0e39b5671da17ddbed27da4f7.jpg" alt="Kunjungan Industri">
+                    <div class="berita-small-info">
+                        <h5>juara lk3gt ke 18</h5>
+                        <div class="berita-footer-small">
+                            <span>12 Mar 2023</span>
+                            <a href="https://smkn1soreang.sch.id/read/52/juara-lk3gt-ke-18">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="berita-small-card">
+                    <img src="https://smkn1soreang.sch.id/media_library/posts/thumbnail/f8e97ea3b10b8802cfe5b730374d6844.PNG" alt="Seminar Karir">
+                    <div class="berita-small-info">
+                        <h5>6 kompetensi keahlian </h5>
+                        <div class="berita-footer-small">
+                            <span>01 Mar 2023</span>
+                            <a href="https://smkn1soreang.sch.id/read/84/6-kompetensi-keahlian">Baca Detail &gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           </div> 
+            <div style="text-align: center; margin-top: 30px; margin-bottom: 95px;">
+            </div>
+            
             <div class="teacher-section" id="guru-pegawai">
                 <div class="section-title-wrapper">
                     <h3 class="section-title">DATA GURU</h3>
                     <p class="section-subtitle">Tenaga Pendidik Terbaik</p>
                 </div>
+                </div>
                 <div class="teacher-card-wrapper">
                     <div class="teacher-card">
-                        <img src="https://smkn1soreang.sch.id/media_library/employees/e8accc5040e2bf8e74145d78d39c31ca.jpeg" alt="Guru 1">
-                        <p>Guru Mapel Sejarah<br>Riska Rahayu, S.Pd., MM</p>
+                        <img src="https://smkn1soreang.sch.id/media_library/employees/78229b502260d9a4d239a8f4ab9d31b0.jpg" alt="Guru 1">
+                        <p>Guru Mata Pelajaran<br>ADE KOSASIH</p>
                     </div>
                     <div class="teacher-card">
-                        <img src="https://smkn1soreang.sch.id/media_library/employees/6e03d37e5a9f5297ce2516a043c5e7d4.jpeg" alt="Guru 2">
-                        <p>Guru Mapel Matematika<br>Rima Risnawati, S.Pd</p>
+                        <img src="https://smkn1soreang.sch.id/media_library/employees/a88faa9133f72f51f6a5d2e5365bd373.jpeg" alt="Guru 2">
+                        <p>Guru Mata Pelajaran<br>ANGGITA WARISTYAWATI</p>
                     </div>
                     <div class="teacher-card">
-                        <img src="https://smkn1soreang.sch.id/media_library/employees/58ebaeecff8348e6d3b4a2fb381082ec.jpg" alt="Guru 3">
-                        <p>Guru Produktif Akuntansi<br>Siti Aisyah, S.E</p>
+                        <img src="https://smkn1soreang.sch.id/media_library/employees/3c01838c529ac819063a1a11b42442ea.jpg" alt="Guru 3">
+                        <p>Guru Produktif <br>ARIOPUTRO BAYU FIRMANSYAH</p>
                     </div>
                     <div class="teacher-card">
-                        <img src="https://smkn1soreang.sch.id/media_library/employees/1818a5efc62479d3ca4f71d6be402d9c.png" alt="Guru 4">
-                        <p>Guru Bahasa Indonesia<br>Anton Wijaya, M.Pd</p>
+                        <img src="https://smkn1soreang.sch.id/media_library/employees/6c807d335aa61ecd1c2ba896d1190ac0.jpg" alt="Guru 4">
+                        <p>Tenaga Kependidikan<br>DAVID ANDRIANSYAH</p>
                     </div>
                 </div>
-                <a href="#" class="btn-green">Lihat Data Guru Selengkapnya</a>
+                <a href="file:///C:/Users/TKJ/Documents/projek/smkn%201%20soreang.html" class="btn-green">Lihat Data Guru Selengkapnya</a>
             </div>
         </div>
     </section>
@@ -694,7 +817,7 @@
                 <div class="ekskul-item"><img src="https://jsp.co.id/wp-content/uploads/2018/07/cari-guru-extra-kulikuler-fotografi.jpg" alt="Ekskul 7"></div>
                 <div class="ekskul-item"><img src="https://www.sman1sungaipenuh.sch.id/wp-content/uploads/2022/06/283461525_729870568433663_3605311806927776453_n.jpg" alt="Ekskul 8"></div> 
             </div>
-            <div class="galeri-btn">
+            <div class="galeri-btn" style="text-align: center;">
                 <a href="#" class="btn-green">Lihat Galeri Lebih Banyak</a>
             </div>
         </div>
@@ -767,7 +890,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
     <footer id="kontak">
